@@ -72,7 +72,7 @@ Funbot.settings.ruleSkip = true;
 Funbot.settings.removedFilter = true;
 
 // Admins ID
-Funbot.admins = ["50aeaeb6c3b97a2cb4c25bd2"];
+Funbot.admins = ["9d2fe99d723c41a69ab0ef0dbf0c678"];
 
 // Random announcements.
 var announcements = 
@@ -310,7 +310,7 @@ $('#woot').click();
  
 function UserJoin(user)
 {
-var JoinMsg = ["@user has joined!","welcome, @user!","Hey there, @user!","Glad you came by, @user"];
+var JoinMsg = ["@user has joined!"];
 r = Math.floor(Math.random() * JoinMsg.length);
 API.sendChat(JoinMsg[r].replace("user", user.username));
 };
